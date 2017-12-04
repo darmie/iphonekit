@@ -15,7 +15,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     end
     #config.vm.synced_folder ".", "/vagrant", type: "smb"
 
-    config.vbguest.iso_path = "http://download.virtualbox.org/virtualbox/5.1.30/VBoxGuestAdditions_5.1.30.iso"
+    config.vbguest.iso_path = "http://download.virtualbox.org/virtualbox/5.1.0/VBoxGuestAdditions_5.1.0.iso"
     # set auto_update to false, if you do NOT want to check the correct 
     # additions version when booting this machine
     config.vbguest.auto_update = false
