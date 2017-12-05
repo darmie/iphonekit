@@ -8,7 +8,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	config.vm.network "private_network", ip: "192.168.50.100"
 
 	config.vm.provider :virtualbox do |vb|
-		vb.customize ["modifyvm", :id, "--memory", "1024"]
+		vb.customize ["modifyvm", :id, "--memory", "2048"]
         vb.customize ["modifyvm", :id, "--usb", "on"]
         ## Mount usb device 
         #vb.customize ['usbfilter', 'add', '0', '--target', :id, '--name', 'USB0', '--vendorid', '0x0a5c', '--productid', '0x21d7']
